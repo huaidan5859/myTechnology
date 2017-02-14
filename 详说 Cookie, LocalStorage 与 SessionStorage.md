@@ -17,6 +17,7 @@
 存放数据大小 | 限制为4KB左右 浏览器可能还限制了用户计算机存储的cookie数量（如允许每个站点最多存储20个cookies，超过则删除旧的；有些浏览器还对所有站点的cookie总数作出限制，如300 | 一般为5MB | 一般为5MB
 与服务器通信 | 每次都会携带在HTTP头中，如果使用cookie保存数据过多会带来性能问题 | 仅在客户端或浏览器中保存，不与服务器通信 | 仅在客户端或浏览器中保存，不与服务器通信
 
+此外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。
 ## 安全性考虑
 
 需要注意的是，不是什么数据都适合放在 Cookie、localStorage 和 sessionStorage 中的。使用它们的时候，需要时刻注意是否有代码存在 XSS 注入的风险。因为只要打开控制台，你就随意修改它们的值，也就是说如果你的网站中有 XSS 的风险，它们就能对你的 localStorage 肆意妄为。所以千万不要用它们存储你系统中的敏感数据。
