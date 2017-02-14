@@ -24,3 +24,16 @@
 
 ## 关于cookie删除
 **如果cookie存入时携带了domain信息，删除时一定要设定domain和path才能正确删除。**
+
+## web storage
+storage提供了storage事件来监听本地存储数据变化；
+`` 插入代码块··
+if(window.addEventListener){
+    window.addEventListener("storage",handle_storage,false);
+}else if(window.attachEvent){
+    window.attachEvent("onstorage",handle_storage);
+}
+function handle_storage(e){
+    if(!e){e=window.event;}
+}
+``end``
