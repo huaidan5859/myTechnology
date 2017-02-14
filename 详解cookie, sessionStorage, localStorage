@@ -1,4 +1,5 @@
-## 特性
+# 详解cookie、sessionStorage、localStorage
+
 特性	Cookie	localStorage	sessionStorage
 数据的生命期	一般由服务器生成，可设置失效时间。如果在浏览器端生成Cookie，默认是关闭浏览器后失效	除非被清除，否则永久保存	仅在当前会话下有效，关闭页面或浏览器后被清除
 存放数据大小	4K左右	一般为5MB
