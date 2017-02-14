@@ -21,6 +21,5 @@
 
 需要注意的是，不是什么数据都适合放在 Cookie、localStorage 和 sessionStorage 中的。使用它们的时候，需要时刻注意是否有代码存在 XSS 注入的风险。因为只要打开控制台，你就随意修改它们的值，也就是说如果你的网站中有 XSS 的风险，它们就能对你的 localStorage 肆意妄为。所以千万不要用它们存储你系统中的敏感数据。
 
-## 关于cookie
-
+## 关于cookie删除
 **如果cookie存入时携带了domain信息，删除时一定要设定domain和path才能正确删除。**
