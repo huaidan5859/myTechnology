@@ -13,4 +13,4 @@
 
 特性 | cookie | localStorage | sessionStorage
 ---- | -----  | -----------  | ---
-数据的生命周期
+数据的生命周期 |              |       
