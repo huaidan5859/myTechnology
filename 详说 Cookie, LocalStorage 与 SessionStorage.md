@@ -27,7 +27,8 @@
 
 ## web storage
 storage提供了storage事件来监听本地存储数据变化；
-        if(window.addEventListener){
+```
+if(window.addEventListener){
     window.addEventListener("storage",handle_storage,false);
 }else if(window.attachEvent){
     window.attachEvent("onstorage",handle_storage);
@@ -35,3 +36,4 @@ storage提供了storage事件来监听本地存储数据变化；
 function handle_storage(e){
     if(!e){e=window.event;}
 }
+```
