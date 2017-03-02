@@ -25,4 +25,7 @@ var i;
 但是真的是这样吗？
 
 参考http://www.barretlee.com/ST/ES5.1/#sec-12.6.3 和 http://www.barretlee.com/ST/ES6/#sec-for-statement 可以发现：
-ES5和ES6不一样，ES5的
+
+ES5和ES6不一样，ES5的for循环只有静态语义，而ES6的for statement存在两种语义，格式不同语义不同，分为静态语义和动态语义。上面代码换成let能解决i值泄漏是因为block块具备动态语义。而 ES5 中 var VariableDeclarationListNoIn 是先声明，然后赋值。ES5 文档中没有做出特殊说明，可以看出 var 变量并不会多次声明。
+
+对于这种原则性的问题，建议直接阅读 ES 文档。
