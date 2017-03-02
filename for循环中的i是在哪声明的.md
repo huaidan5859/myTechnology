@@ -24,4 +24,5 @@ var i;
 
 但是真的是这样吗？
 
+参考http://www.barretlee.com/ST/ES5.1/#sec-12.6.3 和 http://www.barretlee.com/ST/ES6/#sec-for-statement 可以发现：
 ES5和ES6不一样，ES5的
