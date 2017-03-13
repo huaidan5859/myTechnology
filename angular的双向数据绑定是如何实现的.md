@@ -5,7 +5,12 @@
 
 谈起angular的脏检查机制，很多人误以为他是定时检查modal是否变更。其实，ng只有在指定事件触发时，才会进入$digest cycle:
 > 1. DOM事件，比如用户输入文本，点击按钮等；
+
 > 2. XHR响应事件
+
 > 3. 浏览器location变更事件
+
 > 4. timer($interval,$timeout)
+
 > 5. 执行$digest()或$apply()
+
