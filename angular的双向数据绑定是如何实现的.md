@@ -14,3 +14,8 @@
 
 5. 执行$digest()或$apply()
 
+## $digest和$apply
+在Angular中，有$apply和$digest两个函数，我们刚才是通过$digest来让这个数据应用到界面上。那么，它们的差异是什么呢？
+
+
+
